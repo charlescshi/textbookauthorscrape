@@ -10,7 +10,7 @@ def get_link_from_author(author_name):
     for suggest_author in search_query:
         search_terms = ['econo', 'finance', 'asset', 'behavior', 'sociology', 'invest', 'economics',
                         'experimental economics', 'decision', 'pscyhology', 'charitable', 'charity',
-                        'gender']
+                        'gender', 'artefactual', 'lab-in-the-field']
         if not suggest_author['interests']: ## author did not list interests on google scholar
             lastresortauthor = suggest_author
         if any(s in [x.lower() for x in suggest_author['interests']] for s in search_terms):
