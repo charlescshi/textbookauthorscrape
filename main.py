@@ -1,7 +1,7 @@
 from scholarly import scholarly
 import pandas as pd
 
-continuation = 0
+continuation = 151
 
 def get_link_from_author(author_name):
     search_query = scholarly.search_author(author_name)
